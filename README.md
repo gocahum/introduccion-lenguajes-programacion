@@ -8,3 +8,4 @@ MCDeIN Introducción 101-24-01V
 Desde la terminal abrir la la ruta del proyecto y ejecutar los sigueintes comandos:
 pip install pandas
 pip install matplotlib
+
