@@ -1,4 +1,4 @@
-# Primero, asegúrate de que el paquete ggplot2 esté instalado, en caso de que no esté, lo instala
+# Primero, se asegúrate de que el paquete ggplot2 esté instalado, en caso de que no esté, lo instala
 if (!require(ggplot2)) {
   install.packages("ggplot2")
   library(ggplot2)
@@ -23,6 +23,7 @@ sales_plot <- ggplot(datos, aes(x = Month, y = Sale_Amount, fill = Geography)) +
        fill = "Region") +
   theme_minimal() +
   theme(
+    #Se pasan los tamaños que contendrá cada etiqueta
     plot.title = element_text(hjust = 0.5, size = 14),
     axis.title.x = element_text(size = 12),
     axis.title.y = element_text(size = 12),
